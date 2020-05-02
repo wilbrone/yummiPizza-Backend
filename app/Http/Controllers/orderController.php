@@ -36,6 +36,6 @@ class orderController extends Controller
 
         $newOrder->save();
 
-        return response()->json("Success!", 200);
+        return response()->json("success!", 200);
     }
 }
