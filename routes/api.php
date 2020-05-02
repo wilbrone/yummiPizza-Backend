@@ -16,11 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('pizza', 'pizzaController@index');
+Route::get('pizza/order', 'orderController@index');
+
 // handles post and get requests
 Route::get('pizza/{pizza_id}', 'pizzaController@singlePizza');
 
 // handles post request for creating new order
-Route::post('pizza/order', 'orderController@store');
+Route::post('pizza/order/create', 'orderController@store');
+
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
