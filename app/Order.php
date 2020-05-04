@@ -10,10 +10,10 @@ class Order extends Model
 
     protected $guarded = [];
 
-    protected $fillable = ['pizzaId', 'quantity'];
+    protected $fillable = ['pizza_id','quantity','orderNumber','totalCost'];
 
-    // public function pizzaId() {
-    //     return $this->hasOne('App\Pizza', 'pizzaId');
+    // public function pizza_id() {
+    //     return $this->hasMany('App\Pizza', 'pizza_id');
     // }
 
     public function pizzas()

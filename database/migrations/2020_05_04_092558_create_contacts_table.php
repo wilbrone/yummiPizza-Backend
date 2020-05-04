@@ -20,7 +20,7 @@ class CreateContactsTable extends Migration
             $table->string('phone');
             $table->string('apartment');
             $table->string('street');
-            $table->unsignedInteger('orderId');
+            $table->unsignedInteger('order_id');
             $table->timestamps();
         });
     }
