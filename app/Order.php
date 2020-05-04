@@ -7,10 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $primaryKey = 'orderId';
-    protected $guarded = [];
 
-    public function pizzaId() {
-        return $this->hasOne('App\Pizza', 'pizzaId');
+    // protected $guarded = [];
+
+    protected $fillable = ['pizzaId', 'quantity'];
+
+    // public function pizzaId() {
+    //     return $this->hasOne('App\Pizza', 'pizzaId');
+    // }
+
+    public function pizzas()
+    {
+      return $this->hasMany(Pizza::class);
     }
 
     public function getRouteKeyName()

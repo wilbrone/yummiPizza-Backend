@@ -15,7 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('orderId');
-            $table->foreign('pizzaId')->references('id')->on('pizzas');
+            $table->unsignedInteger('pizzaId');
             $table->integer('quantity');
             $table->string('orderNumber');
             $table->integer('totalCost');
@@ -33,3 +33,5 @@ class CreateOrdersTable extends Migration
         Schema::dropIfExists('orders');
     }
 }
+
+// $table->foreign('pizzaId')->references('id')->on('pizzas');
