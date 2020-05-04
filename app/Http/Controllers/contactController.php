@@ -12,9 +12,6 @@ class contactController extends Controller
     public function store(Request $request, Order $order)
     {
       $contact = Contact::create(
-        // [
-        //   'order_id' => $order->id,
-        // ],
         [
             'name' => $request->name,
             'email' => $request->email,
