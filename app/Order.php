@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    protected $primaryKey = 'orderId';
+    // protected $primaryKey = 'orderId';
 
-    // protected $guarded = [];
+    protected $guarded = [];
 
     protected $fillable = ['pizzaId', 'quantity'];
 
@@ -21,8 +21,13 @@ class Order extends Model
       return $this->hasMany(Pizza::class);
     }
 
-    public function getRouteKeyName()
+    public function contact()
     {
-        return $this->primaryKey;
+      return $this->hasOne(Contact::class);
     }
+
+    // public function getRouteKeyName()
+    // {
+    //     return $this->primaryKey;
+    // }
 }

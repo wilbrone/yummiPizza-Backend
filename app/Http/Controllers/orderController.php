@@ -18,7 +18,7 @@ class orderController extends Controller
 
         // return response()->json($data);
 
-        return OrderResource::collection(Order::with('pizzas')->paginate(0));
+        return OrderResource::collection(Order::with('contact','pizzas')->paginate(0));
     }
 
     public function store(Request $request, Pizza $pizza){
@@ -44,7 +44,7 @@ class orderController extends Controller
         $newOrder = Order::create(
             [
             'pizzaId' => $pizza->id,
-            'quantity' => Str::random(),
+            'orderNumber' => Str::random(),
             ],
             ['newOrder' => $request->newOrder]
         );
