@@ -49,11 +49,20 @@ class orderController extends Controller
                 'totalCost' => $request->totalCost,
                 'pizza_id' => $request->pizza_id
             ]
+
             // ['pizza_id' => $pizza->id]
-                // ['newOrder' => $request->newOrder],
+            // ['newOrder' => $request->newOrder],
         );
-        // $pizza =
 
         return new OrderResource($newOrder);
     }
 }
+
+
+// Data Structure to be sent
+// {
+//     'pizza_id':[3],
+//     'quantity':4,
+//     'totalCost':400
+// }
+

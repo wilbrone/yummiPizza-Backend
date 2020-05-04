@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
 
-    protected $guarded = [];
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+        'apartment',
+        'street',
+        'order_id',
+    ];
 
     public function order()
     {

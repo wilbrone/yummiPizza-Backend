@@ -24,6 +24,9 @@ Route::get('pizza/{pizza_id}', 'pizzaController@singlePizza');
 // handles post request for creating new order
 Route::post('pizza/order/create', 'orderController@store');
 
+// for adding contacts
+Route::post('pizza/contact/create', 'contactController@store');
+
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
