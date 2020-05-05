@@ -17,14 +17,14 @@ Deployed on Heroku
 User makes get request is sent to the application, for the lists of pizzas or menu. The user chooses which pizza he or se would like to take and sends a post request to the application with a list of pizza ids the quantity and the total cost calculation is handled on the client application, which is sent as totalCost, a success message is sent for successful order created. The client application request user to enter their details and delivery point, and sent with a post request. This will send a response with the order created. It has the Pizzas ordered, receipt number and contact details.
 
 ## Development server
-To run locally clone the project to you pc `[git clone https://github.com/wilbrone/Hood-Tacker.git](https://github.com/wilbrone/yummiPizza-Backend/tree/master/app)`.
+To run locally clone the project to you pc [git clone https://github.com/wilbrone/Hood-Tacker.git](https://github.com/wilbrone/yummiPizza-Backend/tree/master/app).
 Go into cloned folder and Run `composer install` on your terminal
 Copy `.env.example` to `.env` and configure the database name, username and password, to point to your desired database.
 Run `php artisan serve`.
 
 `http://localhost:8000/`
 
-`[##deployed site url](https://yummi-001.herokuapp.com/)` to access the deployed application on heroku
+[deployed site url](https://yummi-001.herokuapp.com/) to access the deployed application on heroku
 
 APIs can be tested using Postman or opening on the browser.
 
