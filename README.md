@@ -8,23 +8,26 @@ This is a backend app for the apis. The application receives data from other app
 ## Technologies Used
 This project was build using PHP.
 Laravel Framework
+Postman for url testing
 MYSQL(remote mysql) for the database and
 Deployed on Heroku
 
 
 ## BDD
-User makes get request is sent to the application, for the lists of pizzas or menu. The user chooses which pizza he or se would like to take and sends a post request to the application with a list of pizza ids the quantity and the total cost calculation is handled on the client application, which is sent as totalCost, a success message is sent for successful order created. The client application request user to enter their details and delivery point, and sent with a post request. This will send a response with the order created. It has the Pizzas ordered, receipt number and contact details. 
+User makes get request is sent to the application, for the lists of pizzas or menu. The user chooses which pizza he or se would like to take and sends a post request to the application with a list of pizza ids the quantity and the total cost calculation is handled on the client application, which is sent as totalCost, a success message is sent for successful order created. The client application request user to enter their details and delivery point, and sent with a post request. This will send a response with the order created. It has the Pizzas ordered, receipt number and contact details.
 
 ## Development server
 To run locally clone the project to you pc `[git clone https://github.com/wilbrone/Hood-Tacker.git](https://github.com/wilbrone/yummiPizza-Backend/tree/master/app)`.
 Go into cloned folder and Run `composer install` on your terminal
 Copy `.env.example` to `.env` and configure the database name, username and password, to point to your desired database.
-Run `php artisan serve`
+Run `php artisan serve`.
 
 `##deployed site url` to access the deployed application on heroku
 
 You can also access the apis remotely
 `list of the urls`
+
+APIs can be tested using Postman or opening on the browser.
 
 ## Support, Further help and contact details about this application
 wilbroneokoth@gmail.com
