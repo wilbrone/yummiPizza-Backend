@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\OrderResource;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Str;
 use App\Order;
 use App\Pizza;
@@ -27,7 +28,7 @@ class orderController extends Controller
         // $newOrder->pizzaId = $request->input('pizzaId');
         // $newOrder->orderNumber = Str::random();
         // $newOrder->quantity = $request->input('quantity');
-
+        //
         // // for calculating the total cost
         // $data = Pizza::where('id', '=', $newOrder->pizzaId)->first();
 
