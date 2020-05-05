@@ -1,11 +1,34 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Yummi Pizza
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+#### Yummi Pizza App, 1st May, 2020
+#### By **Wilbrone**
+## Description
+This is a backend app for the apis. The application receives data from other applications and sends data to other applications, using its api urls. This applications majors on pizza ordering and delivery apps. It gives lists of Pizza available and receives orders and customer contacts. Finally a receipt for the order is generated 
+
+## Technologies Used
+This project was build using PHP.
+Laravel Framework
+MYSQL(remote mysql) for the database and
+Deployed on Heroku
+
+
+## BDD
+User makes get request is sent to the application, for the lists of pizzas or menu. The user chooses which pizza he or se would like to take and sends a post request to the application with a list of pizza ids the quantity and the total cost calculation is handled on the client application, which is sent as totalCost, a success message is sent for successful order created. The client application request user to enter their details and delivery point, and sent with a post request. This will send a response with the order created. It has the Pizzas ordered, receipt number and contact details. 
+
+## Development server
+To run locally clone the project to you pc `[git clone https://github.com/wilbrone/Hood-Tacker.git](https://github.com/wilbrone/yummiPizza-Backend/tree/master/app)`.
+Go into cloned folder and Run `composer install` on your terminal
+Copy `.env.example` to `.env` and configure the database name, username and password, to point to your desired database.
+Run `php artisan serve`
+
+`##deployed site url` to access the deployed application on heroku
+
+You can also access the apis remotely
+`list of the urls`
+
+## Support, Further help and contact details about this application
+wilbroneokoth@gmail.com
+
 
 ## About Laravel
 
@@ -77,3 +100,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Copyright (c) 2020 **Wilbrone Baron**
