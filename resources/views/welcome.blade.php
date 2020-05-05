@@ -65,12 +65,12 @@
     </head>
     <body>
         <h4>list of urls</h4>
-        <li>
-            <ul>^api/pizza  &nbsp;&nbsp;&nbsp;&nbsp;//get list of pizza</ul>
-            <ul>^api/pizza/id  &nbsp;&nbsp;&nbsp;&nbsp;//get more info on single pizza</ul>
-            <ul>^api/pizza/order  &nbsp;&nbsp;&nbsp;&nbsp;//get list of all orders</ul>
-            <ul>^api/pizza/order/create  &nbsp;&nbsp;&nbsp;&nbsp;//post order and get response with order created</ul>
-            <ul>^api/pizza/contact/create  &nbsp;&nbsp;&nbsp;&nbsp;//post customer contact and get response with order created</ul>
-        <li>
+        <ul>
+            <li>^api/pizza  &nbsp;&nbsp;&nbsp;&nbsp;//get list of pizza</li>
+            <li>^api/pizza/id  &nbsp;&nbsp;&nbsp;&nbsp;//get more info on single pizza</li>
+            <li>^api/pizza/order  &nbsp;&nbsp;&nbsp;&nbsp;//get list of all orders</li>
+            <li>^api/pizza/order/create  &nbsp;&nbsp;&nbsp;&nbsp;//post order and get response with order created</li>
+            <li>^api/pizza/contact/create  &nbsp;&nbsp;&nbsp;&nbsp;//post customer contact and get response with order created</li>
+        <ul>
     </body>
 </html>
