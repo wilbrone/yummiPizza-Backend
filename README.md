@@ -22,12 +22,9 @@ Go into cloned folder and Run `composer install` on your terminal
 Copy `.env.example` to `.env` and configure the database name, username and password, to point to your desired database.
 Run `php artisan serve`.
 
-`http://localhost:8000/api/`
+`http://localhost:8000/`
 
-`##deployed site url` to access the deployed application on heroku
-
-You can also access the apis remotely
-`list of the urls`
+`[##deployed site url](https://yummi-001.herokuapp.com/)` to access the deployed application on heroku
 
 APIs can be tested using Postman or opening on the browser.
 
