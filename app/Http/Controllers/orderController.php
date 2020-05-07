@@ -50,9 +50,6 @@ class orderController extends Controller
                 'totalCost' => $request->totalCost,
                 'pizza_id' => $request->pizza_id
             ]
-
-            // ['pizza_id' => $pizza->id]
-            // ['newOrder' => $request->newOrder],
         );
 
         return new OrderResource($newOrder);

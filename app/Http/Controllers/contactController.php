@@ -26,9 +26,3 @@ class contactController extends Controller
     }
 }
 
-// name
-// email
-// phone
-// apartment
-// street
-// order_id
