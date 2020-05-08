@@ -18,5 +18,14 @@ class PizzaTableSeeder extends Seeder
         // $faker = \Faker\Factory::create();
 
         // And now, let's create a few articles in our database:
+        // for ($i = 0; $i < 2; $i++) {
+        //     Pizza::create([
+        //         'name' => $faker->word,
+        //         'size' => $faker->word,
+        //         'description' => $faker->sentence,
+        //         'cost' => $faker->numberBetween($min = 30, $max = 50),
+        //         'order_id' => null
+        //     ]);
+        // }
     }
 }
