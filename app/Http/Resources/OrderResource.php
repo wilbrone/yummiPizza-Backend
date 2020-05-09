@@ -17,11 +17,10 @@ class OrderResource extends JsonResource
         return [
             'id' => $this->id,
             'orderNumber' => $this->orderNumber,
-            'quantity' => $this->quantity,
             'totalCost' => $this->totalCost,
             'created_at' => (string) $this->created_at,
             'updated_at' => (string) $this->updated_at,
-            'pizzas' => $this->pizzas,
+            'orderItem' => $this->orderItem,
             'contact' => $this->contact,
           ];
     }

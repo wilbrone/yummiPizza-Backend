@@ -27,7 +27,7 @@ class contactController extends Controller
     //   return new ContactResource($contact);
     // }
 
-    public function store(Request $request, Order $order){
+    public function store(Request $request){
 
         $contact = new Contact;
         $contact->name = $request->name;

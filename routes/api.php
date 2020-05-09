@@ -24,6 +24,9 @@ Route::get('pizza/{pizza_id}', 'pizzaController@singlePizza');
 // handles post request for creating new order
 Route::post('pizza/order/create', 'orderController@store');
 
+// handles creating of item orders
+Route::post('pizza/order-item/create', 'orderItemController@store');
+
 // for adding contacts
 Route::post('pizza/contact/create', 'contactController@store');
 

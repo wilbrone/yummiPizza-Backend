@@ -10,12 +10,10 @@ class OrderItem extends Model
 
 
     protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'apartment',
-        'street',
-        'order_id',
+        'quantity',
+        'price',
+        'pizza_id',
+        'order_id'
     ];
 
     public function pizza()
