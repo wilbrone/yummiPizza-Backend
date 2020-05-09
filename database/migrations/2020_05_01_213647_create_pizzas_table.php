@@ -19,7 +19,6 @@ class CreatePizzasTable extends Migration
             $table->string("size");
             $table->string("description");
             $table->integer("cost");
-            $table->unsignedInteger('order_id');
             $table->timestamps();
         });
     }

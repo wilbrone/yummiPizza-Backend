@@ -8,6 +8,6 @@ class Pizza extends Model
 {
     public function order()
     {
-      return $this->belongsToMany(Order::class, 'order_id');
+      return $this->hasMany(OrderItem::class);
     }
 }

@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class OrderItem extends Model
 {
-
-    protected $table = 'contacts';
+    protected $table = 'order_items';
 
 
     protected $fillable = [
@@ -18,6 +17,11 @@ class Contact extends Model
         'street',
         'order_id',
     ];
+
+    public function pizza()
+    {
+      return $this->belongsTo(Pizza::class);
+    }
 
     public function order()
     {

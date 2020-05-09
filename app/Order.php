@@ -9,7 +9,7 @@ class Order extends Model
 
     protected $guarded = [];
 
-    protected $fillable = ['pizza_id','quantity','orderNumber','totalCost'];
+    protected $fillable = ['orderNumber','totalCost'];
 
 
     public function pizzas()
@@ -20,6 +20,11 @@ class Order extends Model
     public function contact()
     {
       return $this->hasOne(Contact::class);
+    }
+
+    public function orderItem()
+    {
+      return $this->hasMany(OrderItem::class);
     }
 
 }
