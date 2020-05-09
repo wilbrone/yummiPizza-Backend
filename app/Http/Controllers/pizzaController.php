@@ -18,7 +18,7 @@ class pizzaController extends Controller
         return Order::all();
     }
 
-    public function singlePizza(Pizza $pizza_id){
-        return $pizza_id;
+    public function singlePizza(Pizza $pizza){
+        return $pizza;
     }
 }

@@ -25,5 +25,19 @@ class orderController extends Controller
 
         return new OrderResource($newOrder);
     }
+
+    public function update(Request $request, Order $order){
+
+        $order->update($request->only(['totalCost']));
+
+        return new OrderResource($order);
+    }
+
+    public function delete(Order $order){
+
+        $order->delete();
+
+        return response()->json(null, 204);
+    }
 }
 

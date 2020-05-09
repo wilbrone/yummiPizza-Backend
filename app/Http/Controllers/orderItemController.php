@@ -18,4 +18,18 @@ class orderItemController extends Controller
         $orderItem->save();
         return new OrderItemResource($orderItem);
     }
+
+    public function update(Request $request, OrderItem $order_item){
+
+        $order_item->update($request->only(['quantity','price']));
+
+        return new OrderItemResource($order_item);
+    }
+
+    public function delete(OrderItem $order_item){
+
+        $order_item->delete();
+
+        return response()->json(null, 204);
+    }
 }
